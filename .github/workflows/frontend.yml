@@ -1,0 +1,17 @@
+
+name: Frontend (placeholder)
+on:
+  push:
+    paths:
+      - 'apps/frontend/**'
+      - '.github/workflows/frontend.yml'
+  workflow_dispatch:
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Archive static site
+        run: |
+          cd apps/frontend
+          echo "OK"
